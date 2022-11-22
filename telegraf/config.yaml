@@ -1,8 +1,8 @@
 ---
 name: Telegraf
-version: 0.0.3
+version: 0.0.4
 slug: hassio_telegraf
-description: A cross-platform system monitoring tool
+description: Export system metrics with telegraf
 url: https://github.com/conrad784/hassio-telegraf
 panel_icon: mdi:speedometer
 startup: services
