@@ -1,6 +1,6 @@
 ---
 name: Telegraf
-version: 0.0.4
+version: 0.0.5
 slug: hassio_telegraf
 description: Export system metrics with telegraf
 url: https://github.com/conrad784/hassio-telegraf
