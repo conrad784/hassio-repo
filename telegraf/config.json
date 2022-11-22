@@ -1,0 +1,40 @@
+{
+  "name": "Telegraf",
+  "version": "0.0.2",
+  "slug": "hassio_telegraf",
+  "description": "An addon to add telegraf to hassio.",
+  "url": "https://github.com/conrad784/hassio-telegraf",
+  "arch": [
+    "armhf",
+    "armv7",
+    "aarch64",
+    "amd64",
+    "i386"
+  ],
+  "startup": "services",
+  "boot": "manual",
+  "hassio_api": true,
+  "hassio_role": "default",
+  "auth_api": true,
+  "docker_api": true,
+  "host_network": true,
+  "host_pid": true,
+  "apparmor": false,
+  "map": [
+    "config:rw",
+    "ssl:rw",
+    "addons:rw",
+    "backup:rw",
+    "share:ro"
+  ],
+  "privileged": [
+    "SYS_ADMIN",
+    "NET_ADMIN"
+  ],
+  "full_access": true,
+  },
+  "ports": {
+    "9273/tcp": 9273
+  },
+  "image" : "ghcr.io/conrad784/{arch}-hassio-telegraf"
+}
