@@ -31,8 +31,6 @@ RUN set -ex && \
     adduser -S telegraf -G telegraf && \
     chown -R telegraf:telegraf /etc/telegraf
 
-EXPOSE 8125/udp 8092/udp 8094
-
 # Copy root filesystem
 COPY rootfs /
 
