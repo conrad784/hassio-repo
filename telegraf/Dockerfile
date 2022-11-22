@@ -27,7 +27,7 @@ RUN set -ex && \
     gpgconf --kill all && \
     rm -rf *.tar.gz* /usr/src /root/.gnupg && \
     apk del .build-deps && \
-    addgroup -S telegraf && \
+    addgroup -S telegraf -g 102 && \
     adduser -S telegraf -G telegraf && \
     chown -R telegraf:telegraf /etc/telegraf
 
