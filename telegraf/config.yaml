@@ -7,11 +7,7 @@ url: https://github.com/conrad784/hassio-telegraf
 panel_icon: mdi:speedometer
 startup: services
 arch:
-  - aarch64
   - amd64
-  - armhf
-  - armv7
-  - i386
 map:
   - addons
   - backup
